@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="O8sr@k*VG_AQS!B_,j;8" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id="M;[mNut|1/}!MiK@wan,"><mutation elseif="1" else="1"/><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="!xX@]$^G+=$u$FJYP1r`"><field name="NAME">Button.A</field></block></value><statement name="DO0"><block type="kitronik_klip_motor_motor_on" id="TiD#@gLh-Je?rggf-#9*"><field name="motor">kitronik_klip_motor.Motors.Motor1</field><field name="dir">kitronik_klip_motor.MotorDirection.Forward</field><value name="speed"><shadow type="math_number_minmax" id="2bNCfI(nyhmtw@C5I#1%"><mutation min="0" max="100" label="Speed" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_show_leds" id="kg0{|-;av7YO68l/Fw^Q"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF1"><block type="device_get_button2" id="vk?hc7}S?NDB9j;T|XTv"><field name="NAME">Button.B</field></block></value><statement name="DO1"><block type="kitronik_klip_motor_motor_on" id="XR/YEJz%gyRrG;{GWwQz"><field name="motor">kitronik_klip_motor.Motors.Motor1</field><field name="dir">kitronik_klip_motor.MotorDirection.Reverse</field><value name="speed"><shadow type="math_number_minmax" id="~9baK9},tTZ5Zf},?Y;E"><mutation min="0" max="100" label="Speed" precision="0"/><field name="SLIDER">100</field></shadow></value><next><block type="device_show_leds" id="AyILT}?NWbYpt|AtTji$"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="kitronik_klip_motor_motor_off" id="UQQS,2z1.MG{g)gQbmg9"><field name="motor">kitronik_klip_motor.Motors.Motor1</field><next><block type="device_clear_display" id="yuZ17ImcF!R]8))=A;QT"/></next></block></statement><next><block type="device_pause" id="I_]OsHt1m7zNkMW9T(j-"><value name="pause"><shadow type="timePicker" id="UT2)+zkDn#@;lVO|m;.6"><field name="ms">200</field></shadow></value></block></next></block></statement></block></xml>
